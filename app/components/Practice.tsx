@@ -10,17 +10,17 @@ export default function Practice() {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4 lg:gap-6 leading-none text-[var(--light)]">
               <p className="text-xs font-medium tracking-[1.12px] uppercase">our practice</p>
-              <div className="flex flex-col gap-3 lg:gap-4 text-[36px] lg:text-[58px]">
-                <p style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+              <h2 className="flex flex-col gap-3 lg:gap-4 text-[36px] lg:text-[58px]">
+                <span style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   Independently owned.
-                </p>
-                <p
+                </span>
+                <span
                   className="italic"
                   style={{ fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif' }}
                 >
                   Dermatologist-led.
-                </p>
-              </div>
+                </span>
+              </h2>
             </div>
             <p className="text-base lg:text-lg leading-[1.4] text-white">
               Our five providers, including four board-certified dermatologists, a
@@ -38,7 +38,7 @@ export default function Practice() {
 
         {/* Right: office photo */}
         <div className="relative w-full lg:w-[646px] h-[300px] lg:h-[527px] shrink-0 overflow-hidden">
-          <Image src={imgOffice} alt="Northcoast Dermatology office" fill className="object-cover" />
+          <Image src={imgOffice} alt="Northcoast Dermatology office in Independence, Ohio" fill className="object-cover" />
         </div>
       </div>
     </section>

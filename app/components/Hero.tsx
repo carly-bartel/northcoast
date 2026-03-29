@@ -11,20 +11,20 @@ const Pill = () => (
 );
 
 const Headline = ({ line1, line2 }: { line1: string; line2: string }) => (
-  <div className="leading-none text-[var(--dark)]">
-    <p
-      className="text-[42px] lg:text-[72px] font-normal"
+  <h1 className="leading-none text-[var(--dark)]">
+    <span
+      className="block text-[42px] lg:text-[72px] font-normal"
       style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
     >
       {line1}
-    </p>
-    <p
-      className="text-[42px] lg:text-[72px] italic lg:ml-[69px]"
+    </span>
+    <span
+      className="block text-[42px] lg:text-[72px] italic lg:ml-[69px]"
       style={{ fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif' }}
     >
       {line2}
-    </p>
-  </div>
+    </span>
+  </h1>
 );
 
 const CTAs = () => (
@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="relative w-full h-[280px]">
           <Image
             src={imgMobileHero}
-            alt="Dermatology patient"
+            alt="Northcoast Dermatology patient receiving expert skin care in Independence, OH"
             fill
             className="object-cover object-top"
             priority
@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="relative w-full h-full">
             <Image
               src={imgHeroPhoto}
-              alt="Dermatology patient"
+              alt="Northcoast Dermatology patient receiving expert skin care in Independence, OH"
               fill
               className="object-cover"
               priority
@@ -89,20 +89,20 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <div className="absolute left-6 top-[159px] leading-none text-[var(--dark)]">
-            <p
-              className="text-[72px] font-normal"
+          <h1 className="absolute left-6 top-[159px] leading-none text-[var(--dark)]">
+            <span
+              className="block text-[72px] font-normal"
               style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >
               Expert care for
-            </p>
-            <p
-              className="text-[72px] italic ml-[69px]"
+            </span>
+            <span
+              className="block text-[72px] italic ml-[69px]"
               style={{ fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif' }}
             >
               every complexion
-            </p>
-          </div>
+            </span>
+          </h1>
 
           {/* CTAs */}
           <div className="absolute left-6 top-[479px] flex gap-4">

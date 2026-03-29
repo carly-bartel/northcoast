@@ -53,10 +53,10 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <Image src={imgFacebook} alt="Facebook" width={32} height={32} />
+                <Image src={imgFacebook} alt="Northcoast Dermatology on Facebook" width={32} height={32} />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <Image src={imgInstagram} alt="Instagram" width={32} height={32} />
+                <Image src={imgInstagram} alt="Northcoast Dermatology on Instagram" width={32} height={32} />
               </a>
             </div>
           </div>

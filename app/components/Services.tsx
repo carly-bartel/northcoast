@@ -34,7 +34,7 @@ export default function Services() {
           <p className="text-xs font-medium tracking-[1.12px] uppercase text-[var(--dark)]">
             What we treat
           </p>
-          <div className="flex flex-wrap items-end gap-3 lg:gap-4 text-[36px] lg:text-[58px] leading-none text-[var(--dark)]">
+          <h2 className="flex flex-wrap items-end gap-3 lg:gap-4 text-[36px] lg:text-[58px] leading-none text-[var(--dark)]">
             <span style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
               Popular
             </span>
@@ -44,7 +44,7 @@ export default function Services() {
             >
               services
             </span>
-          </div>
+          </h2>
         </div>
         <a
           href="#"
@@ -68,9 +68,9 @@ export default function Services() {
             </div>
             <div className="flex flex-col gap-4 lg:gap-6">
               <div className="flex flex-col gap-2">
-                <p className="text-2xl lg:text-[32px] leading-[1.4] text-[var(--dark)]">
+                <h3 className="text-2xl lg:text-[32px] leading-[1.4] text-[var(--dark)]">
                   {service.title}
-                </p>
+                </h3>
                 <p className="text-base leading-[1.4] text-[var(--dark)]">
                   {service.description}
                 </p>

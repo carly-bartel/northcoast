@@ -11,7 +11,7 @@ export default function CTAHero() {
         <div className="relative w-full h-[280px]">
           <Image
             src={imgFooterCta}
-            alt="Dermatology care"
+            alt="Northcoast Dermatology clinic in Independence, Ohio"
             fill
             className="object-cover object-top"
           />
@@ -21,20 +21,20 @@ export default function CTAHero() {
             <span style={{ display: "block", width: 8, height: 8, borderRadius: "50%", background: "var(--mid)", flexShrink: 0 }} />
             <span className="text-base text-[var(--dark)]">Accepting New Patients</span>
           </div>
-          <div className="leading-none text-[var(--dark)]">
-            <p
-              className="text-[42px] font-normal"
+          <h2 className="leading-none text-[var(--dark)]">
+            <span
+              className="block text-[42px] font-normal"
               style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >
               Your skin health
-            </p>
-            <p
-              className="text-[42px] italic"
+            </span>
+            <span
+              className="block text-[42px] italic"
               style={{ fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif' }}
             >
               starts here
-            </p>
-          </div>
+            </span>
+          </h2>
           <p className="text-lg leading-[1.4] text-[var(--dark)]">
             We are currently accepting new patients. Schedule your appointment today and
             take the first step toward expert dermatologic care.
@@ -61,7 +61,7 @@ export default function CTAHero() {
         {/* Photo — bleeds to right screen edge, ignores max-width */}
         <div className="absolute top-0 right-0 h-full" style={{ width: 957 }}>
           <div className="relative w-full h-full">
-            <Image src={imgFooterCta} alt="Dermatology care" fill className="object-cover" />
+            <Image src={imgFooterCta} alt="Northcoast Dermatology clinic in Independence, Ohio" fill className="object-cover" />
           </div>
         </div>
 
@@ -73,20 +73,20 @@ export default function CTAHero() {
           </div>
 
           {/* Headline */}
-          <div className="absolute left-6 top-[159px] leading-none text-[var(--dark)]">
-            <p
-              className="text-[72px] font-normal"
+          <h2 className="absolute left-6 top-[159px] leading-none text-[var(--dark)]">
+            <span
+              className="block text-[72px] font-normal"
               style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >
               Your skin health
-            </p>
-            <p
-              className="text-[72px] italic ml-[69px]"
+            </span>
+            <span
+              className="block text-[72px] italic ml-[69px]"
               style={{ fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif' }}
             >
               starts here
-            </p>
-          </div>
+            </span>
+          </h2>
 
           {/* Body */}
           <p className="absolute left-6 top-[350px] text-lg leading-[1.4] text-[var(--dark)] max-w-[438px]">
