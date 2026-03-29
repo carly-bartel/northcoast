@@ -44,7 +44,7 @@ const cards: { label: string; body: ReactNode; cta: string; href: string }[] = [
 
 export default function InfoCards() {
   return (
-    <section id="visit" className="w-full max-w-[1440px] mx-auto px-6 lg:px-15 py-12 lg:py-16">
+    <section id="visit" className="w-full max-w-[1320px] mx-auto px-6 lg:px-0 py-12 lg:py-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
         {cards.map((card) => (
           <div

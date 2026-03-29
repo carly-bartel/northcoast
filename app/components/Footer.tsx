@@ -26,7 +26,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[var(--dark)]">
-      {/* Marquee strip */}
+      {/* Marquee strip — intentionally full-width */}
       <div className="w-full bg-[var(--lighter)] overflow-hidden py-4">
         <div className="flex items-center gap-8 animate-marquee w-max">
           {repeated.map((item, i) => (
@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
 
       {/* Main footer body */}
-      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-15 pt-12 lg:pt-20 pb-10 lg:pb-16 flex flex-col gap-12 lg:gap-16">
+      <div className="max-w-[1320px] mx-auto px-6 lg:px-0 pt-12 lg:pt-20 pb-10 lg:pb-16 flex flex-col gap-12 lg:gap-16">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-0">
           {/* Brand column */}
           <div className="flex flex-col gap-6 lg:gap-8 lg:w-[319px]">
@@ -71,7 +71,6 @@ export default function Footer() {
 
           {/* Links columns */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
-            {/* Visit */}
             <div className="flex flex-col gap-4 lg:gap-6">
               <p className="text-[var(--mid)] text-xs font-medium tracking-[1.12px] uppercase leading-none">
                 visit
@@ -85,7 +84,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Contact */}
             <div className="flex flex-col gap-4 lg:gap-6">
               <p className="text-[var(--mid)] text-xs font-medium tracking-[1.12px] uppercase leading-none">
                 contact
@@ -106,7 +104,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Quick links */}
             <div className="flex flex-col gap-4 lg:gap-6 col-span-2 md:col-span-1">
               <p className="text-[var(--mid)] text-xs font-medium tracking-[1.12px] uppercase leading-none">
                 quick links

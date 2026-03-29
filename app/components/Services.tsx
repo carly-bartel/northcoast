@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full max-w-[1440px] mx-auto px-6 lg:px-15 py-12 flex flex-col gap-10 lg:gap-12">
+    <section id="services" className="w-full max-w-[1320px] mx-auto px-6 lg:px-0 py-12 flex flex-col gap-10 lg:gap-12">
       {/* Heading row */}
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[580px]">
