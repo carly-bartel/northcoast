@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full max-w-[1320px] mx-auto px-6 lg:px-0 py-12 flex flex-col gap-10 lg:gap-12">
+    <section id="services" className="w-full max-w-[1320px] mx-auto px-6 py-12 flex flex-col gap-10 lg:gap-12">
       {/* Heading row */}
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[580px]">
@@ -47,7 +47,7 @@ export default function Services() {
           </div>
         </div>
         <a
-          href="#services"
+          href="#"
           className="bg-[var(--dark)] text-white text-base px-6 py-3 rounded-full hover:opacity-90 transition-opacity self-start sm:self-auto shrink-0"
         >
           See all services
@@ -57,13 +57,13 @@ export default function Services() {
       {/* Service cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-6">
         {services.map((service) => (
-          <div key={service.title} className="flex flex-col gap-4">
+          <a key={service.title} href="#" className="flex flex-col gap-4 group">
             <div className="relative w-full h-[300px] md:h-[400px] lg:h-[536px] bg-[var(--dark)] overflow-hidden">
               <Image
                 src={service.image}
                 alt={service.title}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="flex flex-col gap-4 lg:gap-6">
@@ -71,7 +71,7 @@ export default function Services() {
                 <p className="text-2xl lg:text-[32px] leading-[1.4] text-[var(--dark)]">
                   {service.title}
                 </p>
-                <p className="text-base lg:text-xl leading-[1.4] text-[var(--dark)]">
+                <p className="text-base leading-[1.4] text-[var(--dark)]">
                   {service.description}
                 </p>
               </div>
@@ -79,14 +79,14 @@ export default function Services() {
                 {service.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[var(--light)] text-[var(--dark)] text-sm lg:text-base px-3 py-1 rounded-full"
+                    className="bg-[var(--light)] text-[var(--dark)] text-base px-3 py-1 rounded-full"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

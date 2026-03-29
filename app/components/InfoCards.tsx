@@ -44,7 +44,7 @@ const cards: { label: string; body: ReactNode; cta: string; href: string }[] = [
 
 export default function InfoCards() {
   return (
-    <section id="visit" className="w-full max-w-[1320px] mx-auto px-6 lg:px-0 py-12 lg:py-16">
+    <section id="visit" className="w-full max-w-[1320px] mx-auto px-6 py-12 lg:py-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
         {cards.map((card) => (
           <div
@@ -55,11 +55,11 @@ export default function InfoCards() {
               <p className="text-xs font-medium tracking-[1.12px] uppercase leading-none">
                 {card.label}
               </p>
-              <p className="text-base lg:text-xl leading-[1.4]">{card.body}</p>
+              <p className="text-base lg:text-lg leading-[1.4]">{card.body}</p>
             </div>
             <a
               href={card.href}
-              className="bg-[var(--dark)] text-[var(--light)] text-sm lg:text-base px-6 py-3 rounded-full self-start hover:opacity-90 transition-opacity"
+              className="bg-[var(--dark)] text-[var(--light)] text-base px-6 py-3 rounded-full self-start hover:opacity-90 transition-opacity"
             >
               {card.cta}
             </a>

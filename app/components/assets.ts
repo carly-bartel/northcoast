@@ -1,8 +1,17 @@
 // Figma MCP asset URLs — valid for 7 days from 2026-03-27.
 // Replace these with permanent assets before launch.
 
-export const imgHeroPhoto =
-  "https://www.figma.com/api/mcp/asset/bd51a64d-6c91-4357-b2a2-d5fc01735155";
+import heroPhoto from "../../public/images/hero.webp";
+export const imgHeroPhoto = heroPhoto;
+
+import mobileHeroPhoto from "../../public/images/mobile-hero.webp";
+export const imgMobileHero = mobileHeroPhoto;
+
+import footerCtaPhoto from "../../public/images/footer-cta.webp";
+export const imgFooterCta = footerCtaPhoto;
+
+import officePhoto from "../../public/images/office.webp";
+export const imgOffice = officePhoto;
 export const imgHeroMask =
   "https://www.figma.com/api/mcp/asset/532c49e8-b91f-4cc5-83a1-224e50b427f0";
 export const imgHeroPhotoAlt =
@@ -22,21 +31,15 @@ export const imgTeam1 =
 export const imgTeam2 =
   "https://www.figma.com/api/mcp/asset/e0b555cc-06ed-472d-9f91-17facdd19a8a";
 
-export const imgLogoMark =
-  "https://www.figma.com/api/mcp/asset/a4ebaeb8-615e-425d-877f-e673b9855b38";
-export const imgLogoText =
-  "https://www.figma.com/api/mcp/asset/422a4ff5-aed6-48bb-b3ee-288071719668";
-export const imgLogoMarkFooter =
-  "https://www.figma.com/api/mcp/asset/cd8aa873-1593-4889-92a4-842c4acdaa45";
+export const imgLogoMark = "/images/logo-icon.svg";
+export const imgLogoText = "/images/logo.svg";
+export const imgLogoMarkFooter = "/images/logo-icon.svg";
 
-export const imgMarqueeIcon =
-  "https://www.figma.com/api/mcp/asset/a4ebaeb8-615e-425d-877f-e673b9855b38";
+export const imgMarqueeIcon = "/images/logo-icon.svg";
 export const imgQuoteIcon =
   "https://www.figma.com/api/mcp/asset/cb598210-c702-4651-8023-efc1025294a0";
 export const imgDot =
   "https://www.figma.com/api/mcp/asset/9a24ce8a-2271-4c24-9eb1-2c3d805b54b8";
 
-export const imgFacebook =
-  "https://www.figma.com/api/mcp/asset/e89fd578-bf84-414c-9745-b59461c7e630";
-export const imgInstagram =
-  "https://www.figma.com/api/mcp/asset/7b4f4810-0d30-4eb3-9fb3-2c68b05054c1";
+export const imgFacebook = "/images/facebook.svg";
+export const imgInstagram = "/images/instagram.svg";

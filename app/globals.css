@@ -30,3 +30,12 @@ body {
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background: var(--mid);
+  flex-shrink: 0;
+}
