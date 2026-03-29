@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   title: "Northcoast Dermatology | Independence, OH",
   description:
     "Expert medical, surgical, and cosmetic dermatology care for patients of all ages in Northeast Ohio. Board-certified dermatologists. Accepting new patients.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
